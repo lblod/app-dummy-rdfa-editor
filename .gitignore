@@ -1,0 +1,30 @@
+# Mongo files
+/data/bcdb/
+
+# Virtuoso files /data/db
+/data/db/*
+/data/db/clean-logs.sh
+/data/db/*.log
+/data/db/virtuoso-temp.db
+/data/db/virtuoso.db
+/data/db/virtuoso.lck
+/data/db/virtuoso.log
+/data/db/virtuoso.pxa
+/data/db/virtuoso.trx
+!/data/db/virtuoso.ini
+
+.DS_Store
+*~
+
+admin-app/
+gelinkt-notuleren-app/
+publicatie-app
+
+docker-compose.override.yml
+.env
+
+# Ignore blockchain crypto/network
+/config/blockchain/*
+!/config/blockchain/clients/.gitkeep 
+!/config/blockchain/config/.gitkeep 
+!/config/blockchain/userCreation.sh
