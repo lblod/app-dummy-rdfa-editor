@@ -1,0 +1,12 @@
+version: "3.4"
+
+x-logging: &default-logging
+  driver: "json-file"
+  options:
+    max-size: "10m"
+    max-file: "3"
+services:
+  rdfa-editor:
+    image: lblod/ember-rdfa-editor:0.31.0
+    restart: always
+    logging: *default-logging
